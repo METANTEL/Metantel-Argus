@@ -1,0 +1,25 @@
+# Secrets: keys live beside the code but never in it.
+EDIP-Keys/
+Meta-Keys/
+*.env
+.env*
+
+# Data and runs: downloaded datasets, derived files, model outputs.
+data/
+runs/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# macOS and editors
+.DS_Store
+.idea/
+.vscode/
+
+# Packaging output
+build/
+dist/

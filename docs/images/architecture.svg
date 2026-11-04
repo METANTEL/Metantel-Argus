@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1760 790" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="t">Argus architecture</title>
+  <desc id="d">A site's feeds are seen by perception models and compiled into a memory; a team of frontier-model agents reasons and coordinates through the memory; people see and decide in the console. Supervisors check the models' output and correct the memory.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+  </defs>
+  <rect width="1760" height="790" rx="14" fill="#ffffff"/>
+  <rect x="1" y="1" width="1758" height="788" rx="14" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- column labels -->
+  <g font-size="13" font-weight="700" letter-spacing="1.6" fill="#64748b">
+    <text x="40" y="46">THE SITE'S FEEDS</text>
+    <text x="350" y="46">PERCEIVE &amp; COMPILE</text>
+    <text x="750" y="46">REMEMBER</text>
+    <text x="1110" y="46">REASON &amp; COORDINATE</text>
+    <text x="1470" y="46">DECIDE &amp; ACT</text>
+  </g>
+
+  <!-- 1 feeds -->
+  <g>
+    <g transform="translate(40,66)">
+      <rect width="250" height="76" rx="10" fill="#f0f9ff" stroke="#bae6fd"/>
+      <text x="16" y="29" font-size="17" font-weight="700" fill="#0c4a6e">Cameras</text>
+      <text x="16" y="52" font-size="13.5" fill="#334155">1080p video, a dozen a hall</text>
+    </g>
+    <g transform="translate(40,156)">
+      <rect width="250" height="76" rx="10" fill="#f0f9ff" stroke="#bae6fd"/>
+      <text x="16" y="29" font-size="17" font-weight="700" fill="#0c4a6e">Location tags</text>
+      <text x="16" y="52" font-size="13.5" fill="#334155">badges and vehicle beacons, 2 Hz</text>
+    </g>
+    <g transform="translate(40,246)">
+      <rect width="250" height="76" rx="10" fill="#f0f9ff" stroke="#bae6fd"/>
+      <text x="16" y="29" font-size="17" font-weight="700" fill="#0c4a6e">Machine sensors</text>
+      <text x="16" y="52" font-size="13.5" fill="#334155">15 signals every 10 s, per machine</text>
+    </g>
+    <g transform="translate(40,336)">
+      <rect width="250" height="76" rx="10" fill="#f0f9ff" stroke="#bae6fd"/>
+      <text x="16" y="29" font-size="17" font-weight="700" fill="#0c4a6e">Traffic and weather</text>
+      <text x="16" y="52" font-size="13.5" fill="#334155">ship positions, airport observations</text>
+    </g>
+    <g transform="translate(40,426)">
+      <rect width="250" height="76" rx="10" fill="#f0f9ff" stroke="#bae6fd"/>
+      <text x="16" y="29" font-size="17" font-weight="700" fill="#0c4a6e">Voice</text>
+      <text x="16" y="52" font-size="13.5" fill="#334155">an operator asks by speaking</text>
+    </g>
+  </g>
+
+  <!-- 2 perceive and compile -->
+  <g>
+    <g transform="translate(350,66)">
+      <rect width="340" height="256" rx="12" fill="#faf5ff" stroke="#d8b4fe"/>
+      <text x="18" y="32" font-size="17" font-weight="700" fill="#581c87">Perception models</text>
+      <text x="18" y="58" font-size="13.5" fill="#334155">
+        <tspan x="18" dy="0">SAM 3.1 follows people and machines, in</tspan>
+        <tspan x="18" dy="20">tiles at full resolution, within its limits</tspan>
+        <tspan x="18" dy="26">Muse Spark names each machine from a</tspan>
+        <tspan x="18" dy="20">close crop; SAM follows the name</tspan>
+        <tspan x="18" dy="26">Muse Voice Transcribe hears the operator</tspan>
+        <tspan x="18" dy="26" fill="#6b21a8" font-weight="600">Result: who and what is where, every moment</tspan>
+      </text>
+    </g>
+    <g transform="translate(350,336)">
+      <rect width="340" height="166" rx="12" fill="#faf5ff" stroke="#d8b4fe"/>
+      <text x="18" y="32" font-size="17" font-weight="700" fill="#581c87">Compilers (no model)</text>
+      <text x="18" y="58" font-size="13.5" fill="#334155">
+        <tspan x="18" dy="0">positions to floor plan, zones, close calls</tspan>
+        <tspan x="18" dy="22">sensor streams to five-minute health, episodes</tspan>
+        <tspan x="18" dy="22">ship positions to hourly traffic, vessel events,</tspan>
+        <tspan x="18" dy="20">slowdowns and how each played out</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- 3 memory -->
+  <g transform="translate(750,66)">
+    <rect width="300" height="436" rx="12" fill="#ecfdf5" stroke="#6ee7b7"/>
+    <text x="18" y="32" font-size="17" font-weight="700" fill="#064e3b">Managed Memory Harness</text>
+    <text x="18" y="52" font-size="13" fill="#047857">by Metantel</text>
+    <rect x="16" y="76" width="268" height="344" rx="8" fill="#ffffff" stroke="#a7f3d0"/>
+    <g text-anchor="middle" fill="#334155">
+      <text x="150" y="172" font-size="17" font-weight="700" fill="#064e3b">Send it the data.</text>
+      <text x="150" y="216" font-size="17" font-weight="700" fill="#064e3b">Describe a workflow change</text>
+      <text x="150" y="238" font-size="17" font-weight="700" fill="#064e3b">in plain language.</text>
+      <text x="150" y="282" font-size="17" font-weight="700" fill="#064e3b">The rest is managed.</text>
+      <text x="150" y="352" font-size="13" fill="#475569"><tspan x="150">Behind a small open protocol.</tspan></text>
+    </g>
+  </g>
+
+  <!-- 4 agents -->
+  <g transform="translate(1110,66)">
+    <rect width="300" height="436" rx="12" fill="#fffbeb" stroke="#fcd34d"/>
+    <text x="18" y="32" font-size="17" font-weight="700" fill="#78350f">The hive</text>
+    <text x="18" y="52" font-size="13" fill="#b45309">frontier models: Muse Spark, Muse Wonder</text>
+    <g font-size="13.5" fill="#334155">
+      <rect x="16" y="72" width="268" height="62" rx="8" fill="#ffffff" stroke="#fde68a"/>
+      <text x="30" y="96" font-size="15" font-weight="700" fill="#78350f">Watchers</text>
+      <text x="30" y="117">one feed each, steered by lessons</text>
+      <rect x="16" y="146" width="268" height="62" rx="8" fill="#ffffff" stroke="#fde68a"/>
+      <text x="30" y="170" font-size="15" font-weight="700" fill="#78350f">Section managers</text>
+      <text x="30" y="191">plan, forecast, ask each other</text>
+      <rect x="16" y="220" width="268" height="62" rx="8" fill="#ffffff" stroke="#fde68a"/>
+      <text x="30" y="244" font-size="15" font-weight="700" fill="#78350f">Director</text>
+      <text x="30" y="265">briefs; brings in people only if needed</text>
+      <text x="18" y="312" font-size="13.5" fill="#334155"><tspan x="18">Every agent carries the site's charter,</tspan><tspan x="18" dy="19">keeps working copies of what it relies on,</tspan><tspan x="18" dy="19">says what it intends before it acts, and</tspan><tspan x="18" dy="19">reads the memory through tools: every</tspan><tspan x="18" dy="19">number from an exact query.</tspan></text>
+    </g>
+  </g>
+
+  <!-- 5 people -->
+  <g>
+    <g transform="translate(1470,66)">
+      <rect width="250" height="190" rx="12" fill="#fff1f2" stroke="#fda4af"/>
+      <text x="18" y="32" font-size="17" font-weight="700" fill="#881337">Console</text>
+      <text x="18" y="58" font-size="13.5" fill="#334155">
+        <tspan x="18">site · floor · cameras</tspan>
+        <tspan x="18" dy="21">ask · hive · supervisors</tspan>
+        <tspan x="18" dy="26">runs on your machine; the keys</tspan>
+        <tspan x="18" dy="21">stay in the harness</tspan>
+      </text>
+    </g>
+    <g transform="translate(1470,272)">
+      <rect width="250" height="110" rx="12" fill="#fff1f2" stroke="#fda4af"/>
+      <text x="18" y="32" font-size="17" font-weight="700" fill="#881337">Decision cards</text>
+      <text x="18" y="58" font-size="13.5" fill="#334155"><tspan x="18">what agents cannot settle, with</tspan><tspan x="18" dy="20">each position and the options</tspan></text>
+    </g>
+    <g transform="translate(1470,398)">
+      <rect width="250" height="104" rx="12" fill="#fff1f2" stroke="#fda4af"/>
+      <text x="18" y="32" font-size="17" font-weight="700" fill="#881337">Your workflows</text>
+      <text x="18" y="58" font-size="13.5" fill="#334155"><tspan x="18">boards built in Artel hand work to</tspan><tspan x="18" dy="20">the harness, on your own account</tspan></text>
+    </g>
+  </g>
+
+  <!-- arrows -->
+  <g stroke="#475569" stroke-width="2.2" fill="none">
+    <path d="M290,104 L318,104 M290,194 L318,194 M290,284 L318,284 M290,374 L318,374 M290,464 L318,464 M318,104 L318,464"/>
+    <path d="M318,194 L346,194" marker-end="url(#arr)"/>
+    <path d="M318,419 L346,419" marker-end="url(#arr)"/>
+    <path d="M692,194 L746,194" marker-end="url(#arr)"/>
+    <path d="M692,419 L746,419" marker-end="url(#arr)"/>
+    <path d="M1052,284 L1106,284" marker-start="url(#arr)" marker-end="url(#arr)"/>
+    <path d="M1412,160 L1466,160" marker-end="url(#arr)"/>
+    <path d="M1412,325 L1466,325" marker-end="url(#arr)"/>
+    <path d="M1412,450 L1466,450" marker-start="url(#arr)" marker-end="url(#arr)"/>
+  </g>
+
+  <!-- supervisors band -->
+  <g transform="translate(350,548)">
+    <rect width="1060" height="124" rx="12" fill="#f0fdf4" stroke="#86efac" stroke-width="2"/>
+    <text x="20" y="32" font-size="17" font-weight="700" fill="#14532d">Supervisors</text>
+    <text x="126" y="32" font-size="13.5" fill="#15803d">a Muse Spark agent over a model or system, a member of the hive like the others</text>
+    <g font-size="13.5" fill="#334155">
+      <text x="20" y="62"><tspan font-weight="700" fill="#14532d">Check, cheaply, everything:</tspan> an output at the model's limit · an independent look that disagrees · physics that is</text>
+      <text x="20" y="82">implausible · something the site says exists that is missing.   <tspan font-weight="700" fill="#14532d">Look, only where a check fires.</tspan></text>
+      <text x="20" y="104"><tspan font-weight="700" fill="#14532d">Remedy:</tspan> ask again in smaller parts · in other words · re-derive · correct the memory · ask people. A correction makes every dependent copy stale.</text>
+    </g>
+  </g>
+  <g stroke="#059669" stroke-width="2.2" fill="none" stroke-dasharray="7 5">
+    <path d="M520,546 L520,506" marker-end="url(#arrG)"/>
+    <path d="M900,546 L900,506" marker-end="url(#arrG)"/>
+    <path d="M1260,546 L1260,506" marker-end="url(#arrG)"/>
+  </g>
+  <g font-size="12.5" fill="#047857" font-weight="600">
+    <text x="530" y="527">looks again, in tiles</text>
+    <text x="910" y="527">corrects what is wrong</text>
+    <text x="1270" y="527">the agents who relied on it re-read</text>
+  </g>
+
+  <!-- scale -->
+  <g font-size="13.5" fill="#475569">
+    <text x="40" y="560"><tspan font-weight="700" fill="#0c4a6e">13 cameras: 2.7 GB in five minutes,</tspan></text>
+    <text x="40" y="580">about 2 billion model tokens a shift.</text>
+    <text x="40" y="600"><tspan font-weight="700" fill="#0c4a6e">A year of one port:</tspan> 207 million</text>
+    <text x="40" y="620">ship positions, 5 to 8 billion tokens.</text>
+    <text x="40" y="650" fill="#0f766e" font-weight="700">No context window holds that.</text>
+  </g>
+  <g font-size="13.5" fill="#475569">
+    <text x="1470" y="560"><tspan font-weight="700" fill="#881337">A model reads about 25 thousand</tspan></text>
+    <text x="1470" y="580">tokens per answer: exact rows,</text>
+    <text x="1470" y="600">never the feed.</text>
+  </g>
+  <text x="880" y="740" font-size="14" fill="#64748b" text-anchor="middle">Raw feeds stay where they are. What Argus compiles from them is what goes to the memory.</text>
+</svg>

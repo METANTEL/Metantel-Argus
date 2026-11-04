@@ -1,0 +1,32 @@
+<!doctype html>
+<!-- SPDX-FileCopyrightText: 2026 JMV Metantel Private Limited -->
+<!-- SPDX-License-Identifier: AGPL-3.0-only -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Metantel Argus</title>
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<header id="top">
+  <div class="brand"><span class="mark"></span><b>Metantel Argus</b><span class="site" id="site-name">factory · four halls</span></div>
+  <nav id="tabs">
+    <button data-view="site">Site</button>
+    <button data-view="floor">Floor</button>
+    <button data-view="cameras">Cameras</button>
+    <button data-view="ask">Ask</button>
+    <button data-view="hive">Hive</button>
+    <button data-view="supervisors">Supervisors</button>
+  </nav>
+  <div class="clock">
+    <button id="play" title="play or pause the shift">▶</button>
+    <select id="speed" title="replay speed"><option value="1">1×</option><option value="4" selected>4×</option><option value="16">16×</option></select>
+    <span id="clock" class="mono">08:00:00</span>
+  </div>
+</header>
+<div id="scrub"><div id="scrub-fill"></div></div>
+<main id="view"></main>
+<script src="/static/app.js"></script>
+</body>
+</html>
